@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Mesh Live Analyser</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #27ae60;
+            --accent: #e67e22;
+            --light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--primary);
+            background: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 0.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .meshtastic {
+            border-top-color: var(--secondary);
+        }
+
+        .meshcore {
+            border-top-color: var(--accent);
+        }
+
+        .status-badge {
+            background: #d4edda;
+            color: #155724;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Georgia Mesh Live Analyser</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#communities">Protocols</a>
+    <a href="#protocols">Protocols</a>
+    <a href="#tracker">GA Coverage</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>What is the Georgia Mesh?</h2>
+        <p>The Georgia Mesh is a low-power, low-cost, open-source mesh network that connects Georgia's 100+ cities. It's
+            designed to be a low-cost, low-power alternative to traditional cellular networks.</p>
+        <p>The Georgia Mesh is a combination of two protocols: <strong>Meshtastic</strong> and <strong>Meshcore</strong>.
+            Both protocols are open-source and free to use.</p>
+    </section>
+    <section id="communities">
+        <h2>Existing Meshes in Georgia</h2>
+        <p>
+            <a href="https://meshingwithgeorgia.net">MeshingWithGeorgia.net</a> Is an initiative to create a state-wide
+            mesh network in Georgia run by the
+            <a href="https://github.com/georgia-statewide-mesh-coalition">Georgia Statewide Mesh Coalition</a>
+        </p>
+        <h3>Our Friends</h3>
+        <ul>
+            <li><a href="https://nhmesh.live/">New Hampshire</a></li>
+            <li><a href="https://map.mwmesh.com/">Utah</a></li>
+            <li><a href="https://livemap.wcmesh.com/">West Coast</a></li>
+            <li><a href="https://meshcore-map.ctmesh.org/">Connecticut</a></li>
+            <li><a href="https://analyzer.meshcorenetz.de/#/live">Germany</a></li>
+        </ul>
+    </section>
+    <section id="protocols">
+        <h2>Protocols</h2>
+        <div class="grid">
+            <div class="card meshtastic">
+                <h3>Meshtastic</h3>
+                <p>Off-Grid Communication For Everyone</p>
+                <a href="https://meshtastic.org" target="_blank">Learn More →</a>
+            </div>
+
+            <div class="card meshcore">
+                <h3>Meshcore</h3>
+                <p>Connect Without The Internet </p>
+                <a href="https://meshcore.io" target="_blank">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tracker">
+        <h2>Analytics</h2>
+        <a href="https://malla.gamesh.net/">Georgia Malla</a>
+        <a href="https://map.meshcore.net/">Meshcore Map</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>Community Resource for Off-Grid Communication.</p>
+    <p>Operates on 915MHz (US ISM Band). No FCC License Required for LoRa Mesh.</p>
+</footer>
+
+</body>
+</html>
